@@ -1,0 +1,139 @@
+html{
+    width: 1020px;
+    background-color: rgb(242, 242, 242);
+}
+body{
+    margin: auto;
+}
+
+header {
+    height: 90px;
+}
+.header__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(45, 48, 58);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: auto;
+    font-family: "Lato";
+    font-size:25px;
+    padding-left: 40px;
+    float:left;
+    letter-spacing: -0.02em;
+}
+.h1__p {
+    color:red;
+    font-size: 25px;
+}
+.header__navigation li{
+    display: inline;
+    margin-left: 27px;
+}
+.li__red{
+    color:#884c4e;
+}
+.nav__div{
+    justify-self: right;
+}
+.header__navigation{
+    font-family: "Lato";
+    font-size:12px;
+    text-transform: uppercase;
+    color:white;
+    padding-right: 40px;
+    cursor: pointer ;
+}
+.header__navigation li:hover{
+    text-decoration: underline;
+}
+
+ 
+
+
+
+.wrapper__ourService{
+    font-family: "Lato";
+    background-color: rgb(242, 242, 242);
+}
+
+h2{
+    padding-top: 35px;
+    color: #666d89;
+    font-size: 30px;
+    letter-spacing: 0.009em;
+    margin-bottom: 10px;
+    padding-left: 41px;    
+}
+.promo__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 10fr 10fr 1fr;
+    background-color:rgb(240,108,100);
+    align-items: center;
+    padding-bottom: 60px;
+}   
+.phone{
+    padding-top:58.5px;
+}
+.yellowPhone{
+    justify-self: center;
+    padding-right: 34px;
+}
+
+.bluePhone{
+    padding-right:38px;
+}
+.arrow{
+    padding-top: 55px;
+    cursor: pointer;
+}
+.arrow:hover{
+    background-position:0 -200px;
+    background-color: black;
+}
+.leftArrow{
+    padding-left: 22px;
+}
+.rightArrow{
+    padding-right: 23px;
+}
+
+
+
+
+h3 {
+    font-size: 18px;
+}
+
+p.h2__text{
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 40px;
+    letter-spacing: -0.0077em;
+    line-height: 30px;
+}
+.service div{
+    display: inline ;
+}
+.tool_icon{
+    float: left;
+}  
+.service p{
+    font-size: 12px;
+}
+.layout-2-row-3-col {
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-right: 25px;    
+    align-items: center;
+}
