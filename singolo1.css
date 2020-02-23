@@ -94,7 +94,6 @@ h2{
 }
 .arrow:hover{
     background-position:0 -200px;
-    background-color: black;
 }
 .leftArrow{
     padding-left: 22px;
