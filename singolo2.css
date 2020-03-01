@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    height: 100vh;
+    max-width: 1020px;
+    font-family: "Lato";
+}
+
+.main p {
+    margin:0;
+}
+
+.main, .footer{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.main{  
+    background-color: #2d303a;
+    color: #666d89;
+    height: 870px;
+    /*height: calc(100% - 50px);*/
+}   
+
+h1{
+    padding-top:59px;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.main p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top:23px;
+    letter-spacing: -0.013em;
+}
+.main__buttons{
+    padding-left: 1px;
+    padding-top:6px;
+    padding-bottom: 19px;
+}
+.main__buttons button{
+    margin-right: 5px;
+    height: 22px;
+    border-radius: 5px;
+    padding-right: 7px;
+    color: #666d89;
+    background-color: #2d303a;
+    border: 1px solid #666d89;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Lato";
+    cursor: pointer;
+}
+.main__buttons button:hover{
+    text-decoration: underline;
+}
+.main .whiteButton {
+    color:#dedede;
+    border: 1px solid #dedede;
+    width: 29px;
+}
+
+.portfolio{   
+    margin: 0px;
+    border-left: 0px; 
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 187px 187px 187px;
+    grid-gap:20px;
+    overflow: hidden;
+    justify-content: space-between;
+    
+}
+.portfolio img{
+    width: 220px;
+    height: 187px;
+} 
+.portfolio div{
+    overflow: hidden;
+
+}
+.afterMain{
+    height: 6px;
+    background-color: #323746;
+}
+
+.footer{
+    margin: 0;
+    height: 768px;
+    background-color: #f2f2f2;
+    color: white;
+}
+h2 {
+    margin: 0;
+    padding-top: 59px;
+    font-size: 30px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    word-spacing: -0.15em;    
+}
+.h2__text{
+    margin-top: 17px;
+    font-size: 18px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.75em;
+    letter-spacing: -0.024em;
+    word-spacing: 0.08em;  
+}
+.profiles{
+    margin-top:44px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    overflow: hidden;
+}
+.photo{
+    width: 300px;
+    height: 300px;
+}
+h3{ 
+    margin-top:10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    letter-spacing: 0.010em;
+
+}
+.profiles p{
+    margin:0;
+    margin-top: 8px;
+    font-size: 12px;
+    word-spacing:  -0.04em;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+}
+.links{
+    margin-top: 23px;
+}
+.links img{
+    cursor: pointer;
+}
+.links img:hover{
+    border: 1px solid #666d89;
+}
+.afterFooter{
+    margin:0;
+    width: 100%;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+/*flex*/
