@@ -67,10 +67,12 @@ h2{
     outline:none;
 }
 .field:required:valid{
-    border: 2px solid green;
+    outline: 2px solid green;
+    outline-style: auto;
 }
 .field:required:invalid:focus{
-    border: 2px solid red;
+    outline: 2px solid red;
+    outline-style: auto;
 }
 
 button.send{
