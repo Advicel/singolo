@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    font-family: "Lato";
+}
+.whiteText{
+    color: #f0d8d9;
+}
+body{
+    width: 1020px;
+    height: 100%;
+}
+.main {
+    padding:0 40px;
+    background-color: #f06c64;
+}
+h1{
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 59px;
+    letter-spacing: 0.13px;
+}
+.h1__text {
+    padding-top: 20px;
+    padding-bottom: 44px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.24px;
+    word-spacing: 0.03px;
+    line-height: 29px;
+    white-space: normal;
+    text-align: justify;
+}
+.content{
+    display: flex;
+}
+h2{
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.3px;
+}
+.h2__text{
+    margin-top: 12px;
+    font-size: 12px;
+    letter-spacing: -0.04px;
+    line-height: 22px;
+    text-align: justify;
+}
+.field-wrapper{
+    width: 619px;
+    margin-right: 21px;
+    margin-bottom: 29px;
+    display: flex;
+    flex-direction: column;
+}
+.field{
+    width: 605px;
+    height: 36px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f48c8f;
+    padding-left: 14px;
+    border: hidden;
+    margin-bottom: 16px;
+    font-size: 12px;
+    vertical-align: top;
+}
+.field:required:valid{
+    border-color: green;
+}
+button.send{
+    justify-content: flex-end;
+    width: 80px;
+    height: 22px;
+    align-self: flex-end;
+    border-radius: 5px;
+    background-color: #d6564f;
+}
+::placeholder {
+    color: #f48c8f;
+}
+.largeField{
+    padding-bottom: 165px;
+}
+.contactInfo{
+    width: 300px;
+}
+.contact-wrapper{
+    margin-top: 20px;
+    margin-left: 3px
+}
+.contact-wrapper div{
+    display: flex;
+    line-height: 22px;
+}
+.contact__link{
+    text-decoration: none;
+    color:inherit;
+}
+.contact{
+    font-size: 12px;
+}
+.contact-img {
+    min-width: 20px;
+}
+
+.footer{
+    display: flex;
+    height: 76px;
+}
+
+.afterMain{
+    background-color:  #ea676b;
+    height: 6px;
+}
+
+.footer{
+    height: 76px;
+    background-color: #2d303a;  
+    display: flex;
+    justify-content: space-between;
+    padding:0 40px;
+    align-items: center;
+}
+.link-wrapper img{
+    cursor: pointer;
+    margin-left: 1px;
+    margin-top: 3px;
+}
+.link-wrapper img:hover{
+    border: 1px solid #666d89;
+}
