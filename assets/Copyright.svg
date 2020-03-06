@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 11" width="92" height="11">
+	<defs>
+		<image width="92" height="11" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAALBAMAAAAASvckAAAAAXNSR0IB2cksfwAAADBQTFRFAAAAZm2JZm2JZm2JZm2JZm2JZm2JZm2JZm2JZm2JZm2JZm2JZm2JZm2JZm2JZm2JJmZCJQAAABB0Uk5TAER3VREiZpkzu+6qzP+I3YD5wI0AAAF0SURBVHichZFNKERRFMd/o/sYi6eXLFjcPEOGklgq5W1kxke9la2PRKxeiIWNhRKp8R01DTIp2VAiykLKdp4lUS8pWaiZxJb7JkQp/7qn0zm/e/63cyFQbgGdZfyQGFVhRh0bglWIXhtholVaBEcilZCzVzP/A9dWVJDqmipOVHvt9xnaXZpqk7RFU/11DNlMqlHNgimCEYGBhRQEzm0tLdwwTdqbywEL9AxjOVyqabENr+RpZ5Aufchxo/GEPHmZ2+1WVpsL6LbtKrNXzGXwuFL4KpfSLm2173UTd4C0tBoC/gvzzC10A4U/m1QcgMOWKruEJHqBl/R7M81pSUkWHyfziWsXFMbCfR7H37i27fi9/HXjE89zOKLDb9cRoqCouMVitiKwvygy0qrm1PDxWP0XPg6N1qOPv4kL6K19UMs9uzWiKVPG12jMOk+HEgoX7925N3dXOe+jPF17cymTX1KrZiybLRHmX/k/k8xmsfjhX8AHahtsSa8YNgEAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Footer">
+		<use id="© Copyright 2013 · by PSDchat.com" href="#img1" x="0" y="0" />
+	</g>
+</svg>
