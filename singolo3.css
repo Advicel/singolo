@@ -64,10 +64,15 @@ h2{
     margin-bottom: 16px;
     font-size: 12px;
     vertical-align: top;
+    outline:none;
 }
 .field:required:valid{
-    border-color: green;
+    border: 2px solid green;
 }
+.field:required:invalid:focus{
+    border: 2px solid red;
+}
+
 button.send{
     justify-content: flex-end;
     width: 80px;
