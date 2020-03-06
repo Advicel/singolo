@@ -130,3 +130,7 @@ button.send{
 .link-wrapper img:hover{
     border: 1px solid #666d89;
 }
+.copyright{
+    color:#656d89;
+    font-size: 12px;
+}
