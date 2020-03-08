@@ -1,4 +1,3 @@
-
 /*header styles*/
 *{
     margin: 0;
@@ -36,12 +35,11 @@ html{
     display:flex;
     padding-top: 8px;
 }
-.header__navigation{
+.header-navigation{
     align-self: center;
     font-size:12px;
     text-transform: uppercase;
     color:white;
-    cursor: pointer ;
 }
 
 .navigation-item {
@@ -62,16 +60,14 @@ html{
 .red-item{
     list-style-type: none;
 }
-.header__navigation a:hover{
+.header-navigation a:hover{
     color:#f06c64;
 }
-
 /*body styles*/
 
 /*************************************singolo1*****************************************/
 
 /*singolo1.slider*/
-
 
 .promo{
     display: flex;
@@ -82,13 +78,14 @@ html{
     justify-content: space-between;
     background-color:#f06c64;
 }   
+.phone{
+    padding-bottom: 5px;
+}
 .yellowPhone{
     margin-right: 17px;
-    padding-bottom: 5px;
 }
 .bluePhone{
     padding-bottom: 5px;
-    
 }
 .arrow{
     cursor: pointer;
@@ -124,10 +121,9 @@ html{
     height: 60px;
     overflow: hidden;
 }
-.tool_icon{
+.tool-icon{
     padding-top:4px;
 }
-
 
 .services{
     display: flex;
@@ -159,7 +155,6 @@ html{
     color: #767e9e;
     white-space: pre-wrap;
     font-weight: 400;
-
 }
 
 /*************************************singolo2*****************************************/
@@ -191,8 +186,7 @@ html{
 .button{
     border-radius: 5px;
     font-size: 12px;
-    padding: 3px 6px;
-    padding-bottom: 2px;
+    padding: 3px 6px 2px 6px ;
     margin-right: 7px;
     color: #666d89;
     border: 1px solid #666d89;
@@ -201,8 +195,8 @@ html{
     cursor: pointer;
 }
 .button:hover{
-    color:#767e9e;
-    border: 1px solid #767e9e;
+    color:#c5c5c5;
+    border: 1px solid #c5c5c5;
 }
 .whiteButton{
     color:#c5c5c5;
@@ -226,9 +220,7 @@ html{
 
 .aboutUs{
     height: 669px;
-    padding: 0 40px;
     padding: 59px 40px 0 40px;
-    padding-top: 59px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
     overflow: hidden;
@@ -291,7 +283,7 @@ html{
 }
 
 /*************************************singolo3*****************************************/
-
+/*singolo3.GetAQuote*/
 .whiteText{
     color: #f0d8d9;
 }
@@ -311,8 +303,7 @@ html{
 }
 
 .getAQuote-h2-text  {
-    padding-top: 20px;
-    padding-bottom: 44px;
+    padding:20px 0 44px 0px;
     font-size: 18px;
     font-weight: 300;
     word-spacing: 0.03px;
@@ -395,7 +386,7 @@ button.send{
     display: flex;
     line-height: 22px;
 }
-.contact__link{
+.contact-link{
     text-decoration: none;
     color:inherit;
 }
@@ -406,6 +397,9 @@ button.send{
 .contact-img {
     min-width: 20px;
 }
+
+/*footer*/
+
 .footer{
     display: flex;
     height: 76px;
@@ -426,8 +420,6 @@ button.send{
 .copyright{
     color:#656d89;
     font-size: 12px;
-    padding-bottom: 2px;
-    padding-left: 2px;
+    padding:0 0 2px 2px;
     letter-spacing: -0.2px;
-
 }
