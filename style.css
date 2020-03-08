@@ -24,12 +24,12 @@ html{
 .header-h1 {
     color: white;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
     font-size:25px;
     letter-spacing: -0.02em;
 }
 .header-h1-star {
-    color:red;
+    color:#f06c64;
     font-size: 26px;
 }
 .navigation{    
@@ -46,12 +46,13 @@ html{
 
 .navigation-item {
     color: #323746;
-    margin-left: 29px;
+    margin-left: 28px;
 }
 
 .navigation-link {
     text-decoration: none;
     color: white;
+    font-weight: 700;
 }
 
 .red-link{
@@ -108,7 +109,7 @@ html{
 .ourServices-h2{
     color: #666d89;
     font-size: 30px;
-    letter-spacing: 0.008em;
+    letter-spacing: -0.2px;
     margin-bottom: 18px;
     font-weight: 900;
 }
@@ -116,7 +117,6 @@ html{
     text-align: justify;
     font-size: 18px;
     font-weight: 300;
-    letter-spacing: -0.012em;
     line-height: 30px;
     margin-bottom: 42px;
     color: #767e9e;
@@ -144,7 +144,7 @@ html{
 }
 .service-header {
     font-size: 18px;
-    letter-spacing: 0.1px;
+    letter-spacing: -0.2px;
     word-spacing: 1px;
     color: #666d89;
 }
@@ -174,7 +174,7 @@ html{
     color: #666d89;
     font-weight: 900;
     font-size: 30px;
-    letter-spacing: 0.7px;
+    letter-spacing: -0.2px;
     margin-bottom: 22px;
     
 }
@@ -183,7 +183,6 @@ html{
     font-weight: 300;
     font-size: 18px;
     text-align: justify;
-    letter-spacing: -0.22px;
     margin-bottom: 15px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -202,8 +201,8 @@ html{
     cursor: pointer;
 }
 .button:hover{
-    color:#c5c5c5;
-    border: 1px solid #c5c5c5;
+    color:#767e9e;
+    border: 1px solid #767e9e;
 }
 .whiteButton{
     color:#c5c5c5;
@@ -238,7 +237,7 @@ html{
     font-size: 30px;
     color: #666d89;
     font-weight: 800;
-    letter-spacing: 0.6px;
+    letter-spacing: -0.2px;
     margin-bottom: 18px;
 }
 .aboutUs-h2-text{
@@ -248,7 +247,6 @@ html{
     font-weight: 300;
     line-height: 30px;
     margin-bottom: 45px;
-    letter-spacing: -0.23px;
 }
 .profiles{
     display: flex;
@@ -266,7 +264,7 @@ html{
     color: #666d89;
     font-weight: 900;
     margin-bottom: 9px;
-    letter-spacing: 0.2px;
+    letter-spacing: -0.2px;
     height: 22px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -283,170 +281,153 @@ html{
     margin-bottom: 21px;
 }
 .social-link{
-    margin-right: 2px;
     cursor: pointer;
+}
+.person-links img{
+    margin-right: 2px;
 }
 .social-link:hover{
     outline: 1px solid #767e9e;
 }
 
+/*************************************singolo3*****************************************/
 
+.whiteText{
+    color: #f0d8d9;
+}
 
+.getAQuote {
+    height: 648px;
+    padding:0 40px;
+    background-color: #f06c64;
+    border-bottom:6px solid #ea676b;
+}
 
-
-
-
-
-/*
-.singolo2-h2{
-    padding-top:59px;
+.getAQuote-h2{
     font-size: 30px;
     font-weight: 900;
-    margin: 0;
-    letter-spacing: 0.02em;
-    text-align: left;
-}
-
-.singolo2-main, .singolo2-footer{
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 1.5rem;
-}
-
-.singolo2-main{  
-    background-color: #2d303a;
-    color: #666d89;
-    height: 870px;
-    /*height: calc(100% - 50px);
-}   
-
-.singolo2-main p {
-    font-size: 18px;
-    font-weight: 300;
-    padding-top:23px;
-    letter-spacing: -0.013em;
-}
-.main__buttons{
-    padding-left: 1px;
-    padding-top:6px;
-    padding-bottom: 19px;
-}
-.main__buttons button{
-    margin-right: 5px;
-    height: 22px;
-    border-radius: 5px;
-    padding-right: 7px;
-    color: #666d89;
-    background-color: #2d303a;
-    border: 1px solid #666d89;
-    font-size: 12px;
-    font-weight: 400;
-    font-family: "Lato";
-    cursor: pointer;
-}
-.main__buttons button:hover{
-    text-decoration: underline;
-}
-.singolo2-main .whiteButton {
-    color:#dedede;
-    border: 1px solid #dedede;
-    width: 29px;
-}
-
-.portfolio{   
-    margin: 0px;
-    border-left: 0px; 
-    display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
-    grid-template-rows: 187px 187px 187px;
-    grid-gap:20px;
-    overflow: hidden;
-    justify-content: space-between;
-    
-}
-.portfolio img{
-    width: 220px;
-    height: 187px;
-} 
-.portfolio div{
-    overflow: hidden;
-
-}
-.afterMain{
-    height: 6px;
-    background-color: #323746;
-}
-
-.footer{
-    margin: 0;
-    height: 768px;
-    background-color: #f2f2f2;
-    color: white;
-}
-.singolo2-h2 {
-    margin: 0;
     padding-top: 59px;
-    font-size: 30px;
-    color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
-    letter-spacing: 0.04em;
-    word-spacing: -0.15em;    
+    letter-spacing: -0.2px;
 }
-.h2__text{
-    margin-top: 17px;
+
+.getAQuote-h2-text  {
+    padding-top: 20px;
+    padding-bottom: 44px;
     font-size: 18px;
-    color: #767e9e;
-    font-family: "Lato";
     font-weight: 300;
-    text-align: left;
-    line-height: 1.75em;
-    letter-spacing: -0.024em;
-    word-spacing: 0.08em;  
+    word-spacing: 0.03px;
+    line-height: 29px;
+    white-space: normal;
+    text-align: justify;
 }
-.profiles{
-    margin-top:44px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:20px;
-    overflow: hidden;
+
+.getAQuote-content{
+    display: flex;
 }
-.photo{
-    width: 300px;
-    height: 300px;
-}
-.singolo2-h3{ 
-    margin-top:10px;
-    margin-bottom: 0;
+
+.contactInfot-h3{
     font-size: 18px;
-    color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
-    letter-spacing: 0.010em;
+    line-height: 16px;
+    letter-spacing: -0.1px;
+}
+.contactInfot-h3-text{
+    margin-top: 12px;
+    font-size: 12px;
+    letter-spacing: -0.04px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.field-wrapper{
+    width: 619px;
+    margin-right: 21px;
+    margin-bottom: 29px;
+    display: flex;
+    flex-direction: column;
+}
+.field{
+    width: 605px;
+    height: 36px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f48c8f;
+    padding:0 0 2px 14px;
+    border: hidden;
+    margin-bottom: 16px;
+    font-size: 12px;
+    vertical-align: top;
+    outline:none;
+}
+.field:required:valid{
+    outline: 2px solid green;
+    outline-style: auto;
+}
+.field:required:invalid:focus{
+    outline: 2px solid red;
+    outline-style: auto;
+}
+
+button.send{
+    justify-content: flex-end;
+    width: 80px;
+    height: 22px;
+    align-self: flex-end;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d6564f;
+}
+
+::placeholder {
+    color: #f48c8f;
+}
+.largeField{
+    padding-bottom: 166px;
+}
+.contactInfo{
+    width: 300px;
+}
+.contact-wrapper{
+    margin-top: 20px;
+    margin-left: 3px
+}
+.contact-wrapper div{
+    display: flex;
+    line-height: 22px;
+}
+.contact__link{
+    text-decoration: none;
+    color:inherit;
+}
+
+.contact{
+    font-size: 12px;
+}
+.contact-img {
+    min-width: 20px;
+}
+.footer{
+    display: flex;
+    height: 76px;
+}
+.footer{
+    height: 76px;
+    background-color: #2d303a;  
+    display: flex;
+    justify-content: space-between;
+    padding:0 40px;
+    align-items: center;
+}
+.footer-links img{
+    padding-left: 1px;
+    margin-top: 3px;
+    margin-left: 1px
+}
+.copyright{
+    color:#656d89;
+    font-size: 12px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    letter-spacing: -0.2px;
 
 }
-.profiles p{
-    margin:0;
-    margin-top: 8px;
-    font-size: 12px;
-    word-spacing:  -0.04em;
-    line-height: 21px;
-    color: #767e9e;
-    font-family: "Lato";
-    font-weight: 400;
-}
-.links{
-    margin-top: 23px;
-}
-.links img{
-    cursor: pointer;
-}
-.links img:hover{
-    border: 1px solid #666d89;
-}
-.afterFooter{
-    margin:0;
-    width: 100%;
-    height: 6px;
-    background-color: #ffffff;
-}*/
