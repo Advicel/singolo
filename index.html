@@ -6,6 +6,7 @@
         <meta name = "viewport" content="width-device-width, initial-scale-1.0">
         <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+        <script defer src="./script.js"></script>
         <title>Singolo</title>
     </head>
 
@@ -20,11 +21,11 @@
 
             <nav class="header-navigation" >
                 <ul class="navigation">
-                    <li class="navigation-item red-item"><a class="navigation-link red-link" href="#">Home</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="#">Services</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="#">Portfolio</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="#">About</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="#">Contact</a></li>
+                    <li class="navigation-item red-item"><a class="navigation-link" href="#">Home</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#ourServices">Services</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#portfolio">Portfolio</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#aboutUs">About</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#getAQuote">Contact</a></li>
                 </ul> 
             </nav>
 
@@ -34,12 +35,32 @@
 
             <section class ="promo">
                 <img class="arrow leftArrow" src="./assets/left.svg" alt="leftArrow">
-                <img class="phone yellowPhone" src="./assets/yellowphone.png" alt="phone">
-                <img class="phone bluePhone" src="./assets/bluephone.png" alt="phone">
+
+                <div class="slide slide1">
+                    <div class="phone-wrapper">
+                        <img class="phone yellowPhone" src="./assets/phone-vertical-border.svg" alt="phone">
+                        <img class ="phone-vertical-display" src="./assets/phone-vertical-display.svg" alt="display">
+                        <img class ="buttonHomeVertical" src="./assets/buttonHome.svg" alt="home">
+                    </div>
+                    <div class="phone-wrapper">
+                        <img class="phone bluePhone" src="./assets/phone-horizontal-border.svg" alt="phone">
+                        <img class ="phone-horizontal-display" src="./assets/phone-horizontal-display.svg" alt="display">
+                        <img class ="buttonHomeHorizontal" src="./assets/buttonHome.svg" alt="home">
+                    </div>
+                </div>
+
+                <div class="slide slide2">
+                    <div class="phone-wrapper">
+                        <img class="slide2Phones" src="./assets/slide2Phones.svg" alt="phone">
+                        <img class ="phone-slide2-display" src="./assets/phone-slide2-display.svg" alt="display">
+                        <img class ="buttonHomeSlide2" src="./assets/buttonHome.svg" alt="home">
+                    </div>
+                </div>
+
                 <img class="arrow rightArrow" src="./assets/right.svg" alt="rightArrow">
             </section>
 
-            <section class="ourServices"> 
+            <section class="ourServices" id="ourServices"> 
                 
                 <h2 class="ourServices-h2">Our Services</h2>
                     <p class="ourServices-h2-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -101,15 +122,15 @@
 
         <div class="singolo2">
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h2 class="portfolio-h2">Portfolio</h2>
                 <p class="portfolio-h2-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 
                 <div class="portfolio-buttons">
-                    <button class="button whiteButton">All</button>
-                    <button class="button">Web Design</button>
-                    <button class="button">Graphic Design</button>
-                    <button class="button">Artwork</button>
+                    <button class="button">All</button>
+                    <button class="button" >Web Design</button>
+                    <button class="button" >Graphic Design</button>
+                    <button class="button" >Artwork</button>
                 </div>
 
                 <section class="gallery">
@@ -124,11 +145,14 @@
                     <img class="gallery-img" src = "./assets/Image3.1.png" alt="someImage">
                     <img class="gallery-img" src = "./assets/Image3.2.png" alt="someImage">
                     <img class="gallery-img" src = "./assets/Image3.3.png" alt="someImage">
-                    <img class="gallery-img" src = "./assets/Image3.4.png" alt="someImage">
+                    <img class="gallery-img" src = "./assets/Image3.4.png" alt="someImage"> 
+                    <img class="gallery-img" src = "./assets/Image3.2.png" alt="someImage">
+                    <img class="gallery-img" src = "./assets/Image3.3.png" alt="someImage">
+                    <img class="gallery-img" src = "./assets/Image3.4.png" alt="someImage"> 
                 </section>
             </section>
 
-            <section class="aboutUs">
+            <section class="aboutUs" id = "aboutUs"> 
                 <h2 class="aboutUs-h2">About Us</h2>
                 <p class ="aboutUs-h2-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="profiles">
@@ -175,17 +199,17 @@
         </div>
 
         <div class="singolo3">
-            <section class="getAQuote">
+            <section class="getAQuote" id ="getAQuote">
                 <h2 class ="getAQuote-h2 whiteText">Get a Quote</h2>
                 <p class="getAQuote-h2-text whiteText">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor 
                     ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="getAQuote-content">   
                     
-                    <form class="field-wrapper">
-                        <input class ="field" type="text" placeholder="Name (Required)" required > 
-                        <input class ="field" type="email" placeholder="Email (Required)" required >
-                        <input class ="field" type="text" placeholder="Subject">
-                        <input class ="field largeField" type="text" placeholder="Describe your project in detail." >
+                    <form class="field-wrapper" onsubmit="sendMessage()" ction=""> 
+                        <input class ="field fieldName" type="text" placeholder="Name (Required)" required > 
+                        <input class ="field fieldEmail" type="email" placeholder="Email (Required)" required >
+                        <input class ="field fieldSubject" type="text" placeholder="Subject">
+                        <input class ="field fieldDecription largeField" type="text" placeholder="Describe your project in detail." >
                         <button class="send whiteText" type="submit">Submit</button>
                     </form>
 

@@ -8,6 +8,9 @@ html{
     width: 1020px; 
 }
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     padding: 0 40px;
     height: 89px;
     background-color:#2d303a;
@@ -19,7 +22,6 @@ html{
     display: flex;
     align-items: center;
 }
-
 .header-h1 {
     color: white;
     text-transform: uppercase;
@@ -53,14 +55,10 @@ html{
     font-weight: 700;
 }
 
-.red-link{
-    text-decoration: none;
-    color:#f06c64;
-}
 .red-item{
     list-style-type: none;
 }
-.header-navigation a:hover{
+.navigation-link:hover{
     color:#f06c64;
 }
 /*body styles*/
@@ -71,25 +69,103 @@ html{
 
 .promo{
     display: flex;
-    padding: 0 40px;
-    height: 594px;
     border-bottom: 6px solid #ea676b;;
     align-items: center;
     justify-content: space-between;
-    background-color:#f06c64;
+    position: relative;
 }   
+.slide1{
+    height: 594px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#f06c64;
+    width: 100%;
+}
+.slide2{
+    height: 594px;
+    padding: 0 40px;
+    display: none;
+    align-items: center;
+    background-color:#648BF0;
+    width: 100%;
+}
 .phone{
-    padding-bottom: 5px;
+    padding-bottom: 4px;
+}
+.slide2Phones{
+    margin-left: 200px;
+}
+.phone-wrapper{
+    position: relative;
 }
 .yellowPhone{
-    margin-right: 17px;
+    margin-right: 2px;
 }
+
 .bluePhone{
-    padding-bottom: 5px;
+    margin-bottom: 1px;
+    margin-right: 1px
 }
+.buttonHomeVertical{
+    position: absolute;
+    bottom: 0;
+    left: 0;      
+    padding-left: 88px;
+    padding-bottom: 41px;
+}
+.buttonHomeHorizontal{
+    position: absolute;
+    left: 0;      
+    padding-top: 87px;
+    padding-left: 10px;
+}
+.buttonHomeSlide2{
+    position: absolute;
+    left: 425px;  
+    top: 433px;  
+}
+.phone-vertical-display{
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    padding-top: 66px;
+    padding-left: 16px;
+}
+.phone-horizontal-display{
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    padding-top: 15px;
+    padding-left: 61px;
+}
+.phone-slide2-display{
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    left: 345px;
+    top: 69px;
+
+}
+
+
 .arrow{
+    position: absolute;
     cursor: pointer;
+    margin-top: -16px;
 }
+.leftArrow{
+    left:0;
+    top:50%;
+    margin-left:42px;
+}
+.rightArrow{
+    right:0;
+    top:50%;
+    margin-right: 40px;
+}
+
 .arrow:hover{
     outline:2px solid pink;
 }
@@ -165,6 +241,12 @@ html{
     border-bottom: 6px solid #323746;
     background-color: #2d303a;
 }
+.portfolio::before{
+display: block;
+content: "";
+height: 55px;
+margin: -55px 0 0;
+}
 .portfolio-h2{
     color: #666d89;
     font-weight: 900;
@@ -198,26 +280,22 @@ html{
     color:#c5c5c5;
     border: 1px solid #c5c5c5;
 }
-.whiteButton{
-    color:#c5c5c5;
-    margin-left: 1px;
-    border: 1px solid #c5c5c5;
-}
 .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 601px;
+    height: 606px;
+    border: none;
     overflow: hidden;
 }
 .gallery-img{
+    box-sizing: border-box;
     width: 220px;
     height: 187px;
     margin-bottom: 20px;
 }
 
 /*singolo2.aboutUs*/
-
 .aboutUs{
     height: 669px;
     padding: 59px 40px 0 40px;
