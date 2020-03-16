@@ -3,15 +3,20 @@
     margin: 0;
     padding: 0;
     font-family: "Lato";
+    /*scroll-behavior: smooth;*/
 }
 html{
-    width: 1020px; 
+    width: 1020px;
+    margin: 0 auto;
+    background-color: palegoldenrod;
+}
+.header,.slide1,.slide2,.ourServices,.portfolio,.aboutUs,.getAQuote,.footer{
+    padding: 0 40px;
 }
 .header {
     position: sticky;
     top: 0;
     z-index: 1;
-    padding: 0 40px;
     height: 89px;
     background-color:#2d303a;
     display: flex;
@@ -53,6 +58,7 @@ html{
     text-decoration: none;
     color: white;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .red-item{
@@ -74,9 +80,9 @@ html{
     justify-content: space-between;
     position: relative;
 }   
+
 .slide1{
     height: 594px;
-    padding: 0 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -85,17 +91,14 @@ html{
 }
 .slide2{
     height: 594px;
-    padding: 0 40px;
     display: none;
     align-items: center;
+    justify-content: space-evenly;
     background-color:#648BF0;
     width: 100%;
 }
 .phone{
     padding-bottom: 4px;
-}
-.slide2Phones{
-    margin-left: 200px;
 }
 .phone-wrapper{
     position: relative;
@@ -103,52 +106,44 @@ html{
 .yellowPhone{
     margin-right: 2px;
 }
-
 .bluePhone{
     margin-bottom: 1px;
     margin-right: 1px
 }
 .buttonHomeVertical{
     position: absolute;
-    bottom: 0;
-    left: 0;      
-    padding-left: 88px;
-    padding-bottom: 41px;
+    bottom: 41px;
+    left: 88px;
 }
 .buttonHomeHorizontal{
     position: absolute;
-    left: 0;      
-    padding-top: 87px;
-    padding-left: 10px;
+    left: 10px;      
+    top:87px;
 }
 .buttonHomeSlide2{
     position: absolute;
-    left: 425px;  
+    left: 226px;  
     top: 433px;  
 }
-.phone-vertical-display{
+
+.phoneVerticalDisplay{
     display: inline-flex;
     position: absolute;
-    left: 0;
-    padding-top: 66px;
-    padding-left: 16px;
+    left: 16px;
+    top:66px;
 }
-.phone-horizontal-display{
+.phoneHorizontalDisplay{
     display: inline-flex;
     position: absolute;
-    left: 0;
-    padding-top: 15px;
-    padding-left: 61px;
+    left: 61px;
+    top:15px;
 }
-.phone-slide2-display{
+.phoneSlide2Display{
     display: inline-flex;
     position: absolute;
-    left: 0;
-    left: 345px;
+    left: 145px;
     top: 69px;
-
 }
-
 
 .arrow{
     position: absolute;
@@ -156,14 +151,12 @@ html{
     margin-top: -16px;
 }
 .leftArrow{
-    left:0;
+    left:42px;
     top:50%;
-    margin-left:42px;
 }
 .rightArrow{
-    right:0;
+    right:40px;
     top:50%;
-    margin-right: 40px;
 }
 
 .arrow:hover{
@@ -171,10 +164,9 @@ html{
 }
 
 /*singolo1.ourServices*/
-
 .ourServices{
     background-color: #f2f2f2;
-    padding:59px 40px 0px 40px ;
+    padding-top: 59px;
     height:435px;
     border-bottom: 6px solid #ffffff;;
 }
@@ -212,7 +204,6 @@ html{
     width: 300px;
     height: 90px;
     margin-bottom: 33px
-    
 }
 .service-header {
     font-size: 18px;
@@ -237,23 +228,16 @@ html{
 /*singolo2.portfolio*/
 .portfolio{
     height: 804px;
-    padding: 59px 40px 0px 40px;
+    padding-top: 59px;
     border-bottom: 6px solid #323746;
     background-color: #2d303a;
-}
-.portfolio::before{
-display: block;
-content: "";
-height: 55px;
-margin: -55px 0 0;
 }
 .portfolio-h2{
     color: #666d89;
     font-weight: 900;
     font-size: 30px;
     letter-spacing: -0.2px;
-    margin-bottom: 22px;
-    
+    margin-bottom: 22px;   
 }
 .portfolio-h2-text{
     color: #767e9e;
@@ -269,11 +253,10 @@ margin: -55px 0 0;
     border-radius: 5px;
     font-size: 12px;
     padding: 3px 6px 2px 6px ;
-    margin-right: 7px;
     color: #666d89;
     border: 1px solid #666d89;
     background-color: #2d303a;
-    margin-bottom: 19px;
+    margin:0 7px 19px 0;
     cursor: pointer;
 }
 .button:hover{
@@ -292,13 +275,13 @@ margin: -55px 0 0;
     box-sizing: border-box;
     width: 220px;
     height: 187px;
-    margin-bottom: 20px;
+    margin:0 0 20px 0;
 }
 
 /*singolo2.aboutUs*/
 .aboutUs{
     height: 669px;
-    padding: 59px 40px 0 40px;
+    padding-top: 59px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
     overflow: hidden;
@@ -308,7 +291,7 @@ margin: -55px 0 0;
     color: #666d89;
     font-weight: 800;
     letter-spacing: -0.2px;
-    margin-bottom: 18px;
+    margin:0 0 18px 0;
 }
 .aboutUs-h2-text{
     font-size: 18px;
@@ -316,7 +299,7 @@ margin: -55px 0 0;
     color: #767e9e;
     font-weight: 300;
     line-height: 30px;
-    margin-bottom: 45px;
+    margin-bottom:45px;
 }
 .profiles{
     display: flex;
@@ -327,13 +310,13 @@ margin: -55px 0 0;
 }
 .person-photo{
     width: 300px;
-    margin-bottom: 11px;
+    margin-bottom:11px;
 }
 .person-name{
     font-size: 18px;
     color: #666d89;
     font-weight: 900;
-    margin-bottom: 9px;
+    margin-bottom:9px;
     letter-spacing: -0.2px;
     height: 22px;
     white-space: nowrap;
@@ -359,7 +342,6 @@ margin: -55px 0 0;
 .social-link:hover{
     outline: 1px solid #767e9e;
 }
-
 /*************************************singolo3*****************************************/
 /*singolo3.GetAQuote*/
 .whiteText{
@@ -367,8 +349,8 @@ margin: -55px 0 0;
 }
 
 .getAQuote {
-    height: 648px;
-    padding:0 40px;
+    height: 589px;
+    padding-top:59px;
     background-color: #f06c64;
     border-bottom:6px solid #ea676b;
 }
@@ -376,7 +358,6 @@ margin: -55px 0 0;
 .getAQuote-h2{
     font-size: 30px;
     font-weight: 900;
-    padding-top: 59px;
     letter-spacing: -0.2px;
 }
 
@@ -420,7 +401,7 @@ margin: -55px 0 0;
     font-weight: 400;
     border-radius: 5px;
     background-color: #d6564f;
-    color: #f48c8f;
+    color: #f0d8d9;
     padding:0 0 2px 14px;
     border: hidden;
     margin-bottom: 16px;
@@ -457,8 +438,7 @@ button.send{
     width: 300px;
 }
 .contact-wrapper{
-    margin-top: 20px;
-    margin-left: 3px
+    margin:20px 0 0 3px;
 }
 .contact-wrapper div{
     display: flex;
@@ -475,25 +455,16 @@ button.send{
 .contact-img {
     min-width: 20px;
 }
-
 /*footer*/
-
-.footer{
-    display: flex;
-    height: 76px;
-}
 .footer{
     height: 76px;
     background-color: #2d303a;  
     display: flex;
     justify-content: space-between;
-    padding:0 40px;
     align-items: center;
 }
 .footer-links img{
-    padding-left: 1px;
-    margin-top: 3px;
-    margin-left: 1px
+    margin: 3px 0 0 1px;
 }
 .copyright{
     color:#656d89;

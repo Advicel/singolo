@@ -11,9 +11,7 @@
     </head>
 
     <body>
-
         <header class="header">
-
             <div class="logo">
                 <h1 class="header-h1">Singolo</h1>
                 <span class="header-h1-star">*</span>
@@ -21,30 +19,29 @@
 
             <nav class="header-navigation" >
                 <ul class="navigation">
-                    <li class="navigation-item red-item"><a class="navigation-link" href="#">Home</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="#ourServices">Services</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="#portfolio">Portfolio</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="#aboutUs">About</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="#getAQuote">Contact</a></li>
+                    <li class="navigation-item red-item"><a class="navigation-link" onclick="scrollToAnchor('.promo')" href="#qwe" >Home</a></li>
+                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.ourServices')" href="#ourServices" >Services</a></li>
+                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.portfolio')" href="#portfolio">Portfolio</a></li>
+                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.aboutUs')" href="#aboutUs">About</a></li>
+                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.getAQuote')" href="#getAQuote">Contact</a></li>
                 </ul> 
             </nav>
-
         </header>
 
         <div class="singolo1">
-
             <section class ="promo">
                 <img class="arrow leftArrow" src="./assets/left.svg" alt="leftArrow">
 
                 <div class="slide slide1">
                     <div class="phone-wrapper">
                         <img class="phone yellowPhone" src="./assets/phone-vertical-border.svg" alt="phone">
-                        <img class ="phone-vertical-display" src="./assets/phone-vertical-display.svg" alt="display">
+                        <img class ="phoneDisplay phoneVerticalDisplay" src="./assets/phone-vertical-display.svg" alt="display">
                         <img class ="buttonHomeVertical" src="./assets/buttonHome.svg" alt="home">
                     </div>
+
                     <div class="phone-wrapper">
                         <img class="phone bluePhone" src="./assets/phone-horizontal-border.svg" alt="phone">
-                        <img class ="phone-horizontal-display" src="./assets/phone-horizontal-display.svg" alt="display">
+                        <img class ="phoneDisplay phoneHorizontalDisplay" src="./assets/phone-horizontal-display.svg" alt="display">
                         <img class ="buttonHomeHorizontal" src="./assets/buttonHome.svg" alt="home">
                     </div>
                 </div>
@@ -52,7 +49,7 @@
                 <div class="slide slide2">
                     <div class="phone-wrapper">
                         <img class="slide2Phones" src="./assets/slide2Phones.svg" alt="phone">
-                        <img class ="phone-slide2-display" src="./assets/phone-slide2-display.svg" alt="display">
+                        <img class ="phoneDisplay phoneSlide2Display" src="./assets/phone-slide2-display.svg" alt="display">
                         <img class ="buttonHomeSlide2" src="./assets/buttonHome.svg" alt="home">
                     </div>
                 </div>
@@ -60,15 +57,13 @@
                 <img class="arrow rightArrow" src="./assets/right.svg" alt="rightArrow">
             </section>
 
-            <section class="ourServices" id="ourServices"> 
-                
+            <section class="ourServices" > 
                 <h2 class="ourServices-h2">Our Services</h2>
                     <p class="ourServices-h2-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                         Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                     
                     <div class="services">
-
                         <div class="service">
                             <img class="tool-icon" src="./assets/ellipse-pen.svg" alt="pen">
                             <div class="service-text">
@@ -121,8 +116,7 @@
         </div>
 
         <div class="singolo2">
-
-            <section class="portfolio" id="portfolio">
+            <section class="portfolio">
                 <h2 class="portfolio-h2">Portfolio</h2>
                 <p class="portfolio-h2-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 
@@ -145,18 +139,14 @@
                     <img class="gallery-img" src = "./assets/Image3.1.png" alt="someImage">
                     <img class="gallery-img" src = "./assets/Image3.2.png" alt="someImage">
                     <img class="gallery-img" src = "./assets/Image3.3.png" alt="someImage">
-                    <img class="gallery-img" src = "./assets/Image3.4.png" alt="someImage"> 
-                    <img class="gallery-img" src = "./assets/Image3.2.png" alt="someImage">
-                    <img class="gallery-img" src = "./assets/Image3.3.png" alt="someImage">
-                    <img class="gallery-img" src = "./assets/Image3.4.png" alt="someImage"> 
+                    <img class="gallery-img" src = "./assets/Image3.4.png" alt="someImage">
                 </section>
             </section>
 
-            <section class="aboutUs" id = "aboutUs"> 
+            <section class="aboutUs"> 
                 <h2 class="aboutUs-h2">About Us</h2>
                 <p class ="aboutUs-h2-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="profiles">
-
                     <div class="person">
                         <img class="person-photo" src="./assets/profile1.png" alt="personPhoto">
                         <h3 class="person-name">Adam Jensen</h3>
@@ -181,6 +171,7 @@
                             <img class="social-link" src="./assets/LinkedIn.png" alt="LinkedIn">
                         </div>
                     </div>
+
                     <div class="person">
                         <img class="person-photo" src="./assets/profile3.png" alt="personPhoto">
                         <h3 class="person-name">Scolara Visari</h3>
@@ -192,20 +183,18 @@
                             <img class="social-link" src="./assets/Twitter.png" alt="Twitter">
                             <img class="social-link" src="./assets/LinkedIn.png" alt="LinkedIn">
                         </div>
-
                     </div>
                 </div>
             </section>
         </div>
 
         <div class="singolo3">
-            <section class="getAQuote" id ="getAQuote">
+            <section class="getAQuote"  >
                 <h2 class ="getAQuote-h2 whiteText">Get a Quote</h2>
                 <p class="getAQuote-h2-text whiteText">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor 
                     ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="getAQuote-content">   
-                    
-                    <form class="field-wrapper" onsubmit="sendMessage()" ction=""> 
+                    <form class="field-wrapper" onsubmit="sendMessage()" action=""> 
                         <input class ="field fieldName" type="text" placeholder="Name (Required)" required > 
                         <input class ="field fieldEmail" type="email" placeholder="Email (Required)" required >
                         <input class ="field fieldSubject" type="text" placeholder="Subject">
@@ -219,7 +208,6 @@
                             Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
                         
                         <div class="contact-wrapper whiteText">
-                            
                             <div class="contact whiteText">
                                 <div class="contact-img">
                                     <img src="./assets/location.svg" alt="location">
@@ -240,7 +228,6 @@
                                 </div>
                                 <a href="mailTo:info@singolo.com" class="contact-link">info@singolo.com</a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -248,7 +235,6 @@
         </div>
 
         <footer class="footer">
-            
             <div class="copyright">
                 <p>© Copyright 2013 · by PSDchat.com</p>
             </div>
@@ -259,7 +245,6 @@
                 <img class="social-link" src="./assets/Twitter.png" alt="Twitter">
                 <img class="social-link" src="./assets/LinkedIn.png" alt="LinkedIn">
             </div>
-
         </footer>
     </body>
 </html>

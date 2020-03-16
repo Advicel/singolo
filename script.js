@@ -6,12 +6,19 @@ const portfolioButtons = document.querySelectorAll(".button");
 const verticalPhoneButton = document.querySelector(".buttonHomeVertical");
 const horizontalPhoneButton = document.querySelector(".buttonHomeHorizontal");
 const slide2PhoneButton = document.querySelector(".buttonHomeSlide2");
-const verticalPhoneDisplay = document.querySelector(".phone-vertical-display");
-const horizontalPhoneDisplay = document.querySelector(".phone-horizontal-display");
-const slide2PhoneDisplay = document.querySelector(".phone-slide2-display");
+const verticalPhoneDisplay = document.querySelector(".phoneVerticalDisplay");
+const horizontalPhoneDisplay = document.querySelector(".phoneHorizontalDisplay");
+const slide2PhoneDisplay = document.querySelector(".phoneSlide2Display");
+
+const PhoneDisplay = document.querySelectorAll(".phoneDisplay");
+
 const navButtons = document.querySelectorAll(".navigation-link");
 const galleryImg =document.getElementsByClassName('gallery-img'); 
 const submitButton = document.querySelector(".send");
+const mixRand=()=> {
+    return Math.random()-0.5;
+}
+
 
 for (const button of navButtons) {
   button.addEventListener('click',()=> setNavButtonActive(button));
@@ -23,9 +30,7 @@ for(const img of galleryImg){
     img.addEventListener('click',()=>setGalleryImgActive(img))
 }
 
-const mixRand=()=> {
-    return Math.random()-0.5;
-}
+
 leftArrow.addEventListener("click",()=>showSlides(slideIndex-=1));
 rightArrow.addEventListener("click",()=>showSlides(slideIndex+=1));
 verticalPhoneButton.addEventListener("click",()=>tooglePhoneDisplay(verticalPhoneDisplay));
@@ -81,6 +86,22 @@ function sendMessage(){
     }else{
         message+="\nОписание: "+fieldDecription;
     }
-
     alert(message);
+    return true;
+}
+
+
+function scrollToAnchor(element){
+    //document.querySelector(element).scrollIntoView({behavior: "smooth",block:"center"});
+    const headerHeight = 95;
+
+    // scroll to your element
+    document.querySelector(element).scrollIntoView();
+
+    // now account for fixed header
+    const scrolledY = window.scrollY;
+
+    if(scrolledY){
+        window.scroll(0, scrolledY - headerHeight);
+    }
 }
