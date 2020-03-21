@@ -1,3 +1,5 @@
+
+
 /*header styles*/
 *{
     margin: 0;
@@ -10,7 +12,7 @@ html{
     margin: 0 auto;
     background-color: palegoldenrod;
 }
-.header,.slide1,.slide2,.ourServices,.portfolio,.aboutUs,.getAQuote,.footer{
+.header,.ourServices,.portfolio,.aboutUs,.getAQuote,.footer{
     padding: 0 40px;
 }
 .header {
@@ -60,7 +62,7 @@ html{
     font-weight: 700;
     cursor: pointer;
 }
-
+/*пофиксить*/
 .red-item{
     list-style-type: none;
 }
@@ -72,97 +74,156 @@ html{
 /*************************************singolo1*****************************************/
 
 /*singolo1.slider*/
-
-.promo{
-    display: flex;
-    border-bottom: 6px solid #ea676b;;
-    align-items: center;
-    justify-content: space-between;
+/*caruselka*/
+.slider{
+    height: 600px;
     position: relative;
-}   
-
-.slide1{
-    height: 594px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color:#f06c64;
+}
+.carousel{
+    position: absolute;
     width: 100%;
+    text-align: center;
+    /*top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);*/
+}
+.item-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.item{
+    display:none;
+    position: relative;
+    animation:  0.5s ease-in-out;
+}
+.item.active,
+.next{
+    display: block;
+}
+.next{
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+.slide{
+    display: flex;
+    padding: 0 40px;
+    height: 594px;
+    justify-content: space-evenly;
+}
+.slide1{
+    background-color: #F06C64;
+    border-bottom: 6px solid #EA676B;
 }
 .slide2{
-    height: 594px;
-    display: none;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color:#648BF0;
-    width: 100%;
+    background-color: #648BF0;
+    border-bottom: 6px solid #638AE1;
 }
-.phone{
-    padding-bottom: 4px;
+.project-name{
+    padding:10px
 }
-.phone-wrapper{
+.phoneWrapper{
     position: relative;
+    align-self: center;
 }
-.yellowPhone{
-    margin-right: 2px;
-}
-.bluePhone{
-    margin-bottom: 1px;
-    margin-right: 1px
-}
-.buttonHomeVertical{
+.phoneDisplay{
     position: absolute;
-    bottom: 41px;
-    left: 88px;
+    display: none;
 }
-.buttonHomeHorizontal{
+.phoneButton{
     position: absolute;
-    left: 10px;      
-    top:87px;
 }
-.buttonHomeSlide2{
-    position: absolute;
-    left: 226px;  
-    top: 433px;  
-}
-
 .phoneVerticalDisplay{
-    display: inline-flex;
-    position: absolute;
     left: 16px;
-    top:66px;
+    top: 66px;
 }
 .phoneHorizontalDisplay{
-    display: inline-flex;
-    position: absolute;
     left: 61px;
-    top:15px;
+    top: 15px;
 }
 .phoneSlide2Display{
-    display: inline-flex;
-    position: absolute;
     left: 145px;
     top: 69px;
 }
+.buttonHomeVertical{
+    bottom: 36px;
+    left: 88px;
+}
+.buttonHomeHorizontal{
+    bottom: 114px;
+    left: 10px;
+}
+.buttonHomeSlide2{
+    bottom: 40px;
+    left: 225px;
+}
 
-.arrow{
+.control{
     position: absolute;
+    top:0;
+    bottom: 0;
+    width: 58px;
     cursor: pointer;
-    margin-top: -16px;
 }
-.leftArrow{
-    left:42px;
-    top:50%;
+.control.left{
+    left:0;
+    right: auto;
 }
-.rightArrow{
-    right:40px;
-    top:50%;
+.control.right{
+    left:auto;
+    right: 0;
+}
+.arrow{
+    display: inline-block;
+    position: absolute;
+    top: 281px;
+    /*
+    top:232px;
+    left:0;
+    transform: translatey(-50%);*/
+    font-size: 40px;
+}
+.arrow.right{
+    left: 2px;
+}
+.arrow.left{
+    right:0;
 }
 
-.arrow:hover{
-    outline:2px solid pink;
+.to-left{
+    animation-name: left;
+}
+.to-right{
+    animation-name: right;
+    animation-direction: reverse;
 }
 
+.from-left{
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right{
+    animation-name: right;
+}
+
+@keyframes left{
+    from{
+        left:0;
+    }
+    to{
+        left:-100%
+    }
+}
+@keyframes right{
+    from{
+        left:100%;
+    }
+    to{
+        left:0%
+    }
+}
 /*singolo1.ourServices*/
 .ourServices{
     background-color: #f2f2f2;
@@ -472,4 +533,20 @@ button.send{
     font-size: 12px;
     padding:0 0 2px 2px;
     letter-spacing: -0.2px;
+}
+
+
+
+
+
+
+.inline-flex{
+    display: inline-flex;
+}
+.activeNavigationButton{
+    color:#f06c64;
+}
+.activePortfolioButton{
+    color:#c5c5c5;
+    borderColor:#c5c5c5;
 }

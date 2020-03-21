@@ -19,44 +19,51 @@
 
             <nav class="header-navigation" >
                 <ul class="navigation">
-                    <li class="navigation-item red-item"><a class="navigation-link" onclick="scrollToAnchor('.promo')" href="#qwe" >Home</a></li>
-                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.ourServices')" href="#ourServices" >Services</a></li>
-                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.portfolio')" href="#portfolio">Portfolio</a></li>
-                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.aboutUs')" href="#aboutUs">About</a></li>
-                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.getAQuote')" href="#getAQuote">Contact</a></li>
+                    <li class="navigation-item red-item"><a class="navigation-link" onclick="scrollToAnchor('.promo')" >Home</a></li>
+                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.ourServices')" >Services</a></li>
+                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.portfolio')" >Portfolio</a></li>
+                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.aboutUs')" >About</a></li>
+                    <li class="navigation-item"><a class="navigation-link" onclick="scrollToAnchor('.getAQuote')" >Contact</a></li>
                 </ul> 
             </nav>
         </header>
 
         <div class="singolo1">
-            <section class ="promo">
-                <img class="arrow leftArrow" src="./assets/left.svg" alt="leftArrow">
-
-                <div class="slide slide1">
-                    <div class="phone-wrapper">
-                        <img class="phone yellowPhone" src="./assets/phone-vertical-border.svg" alt="phone">
-                        <img class ="phoneDisplay phoneVerticalDisplay" src="./assets/phone-vertical-display.svg" alt="display">
-                        <img class ="buttonHomeVertical" src="./assets/buttonHome.svg" alt="home">
+            <section class="promo slider">
+            <div class="carousel">
+                <div class="item-container">
+                    <div class="item active">
+                        <div class="slide slide1">
+                            <div class="phoneWrapper">
+                                <img class ="phone-vertical-border" src="./assets/phone-vertical-border.svg" alt="phone">
+                                <img class= "phoneDisplay phoneVerticalDisplay inline-flex" src="./assets/phone-vertical-display.svg" alt="phoneDisplay">
+                                <img class= "phoneButton buttonHomeVertical" src="./assets/buttonHome.svg" alt="buttonHome">
+                            </div>
+                            <div class="phoneWrapper">
+                                <img src="./assets/phone-horizontal-border.svg" alt="phone"> 
+                                <img class= "phoneDisplay phoneHorizontalDisplay inline-flex" src="./assets/phone-horizontal-display.svg" alt="phoneDisplay">
+                                <img class= "phoneButton buttonHomeHorizontal" src="./assets/buttonHome.svg" alt="buttonHome">
+                            </div>                           
+                        </div>
                     </div>
-
-                    <div class="phone-wrapper">
-                        <img class="phone bluePhone" src="./assets/phone-horizontal-border.svg" alt="phone">
-                        <img class ="phoneDisplay phoneHorizontalDisplay" src="./assets/phone-horizontal-display.svg" alt="display">
-                        <img class ="buttonHomeHorizontal" src="./assets/buttonHome.svg" alt="home">
+                    <div class="item">
+                        <div class="slide slide2">
+                            <div class="phoneWrapper">
+                                <img src="./assets/slide2Phones.svg" alt="phone">
+                                <img class= "phoneDisplay phoneSlide2Display inline-flex" src="./assets/phone-slide2-display.svg" alt="phoneDisplay">
+                                <img class= "phoneButton buttonHomeSlide2" src="./assets/buttonHome.svg" alt="buttonHome">
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="slide slide2">
-                    <div class="phone-wrapper">
-                        <img class="slide2Phones" src="./assets/slide2Phones.svg" alt="phone">
-                        <img class ="phoneDisplay phoneSlide2Display" src="./assets/phone-slide2-display.svg" alt="display">
-                        <img class ="buttonHomeSlide2" src="./assets/buttonHome.svg" alt="home">
-                    </div>
+                <div class="control left">
+                    <img class="arrow left" src="./assets/left.svg" alt="">
                 </div>
-
-                <img class="arrow rightArrow" src="./assets/right.svg" alt="rightArrow">
-            </section>
-
+                <div class="control right">
+                    <img class="arrow right" src="./assets/right.svg" alt="">
+                </div>
+            </div>
+        </section>
             <section class="ourServices" > 
                 <h2 class="ourServices-h2">Our Services</h2>
                     <p class="ourServices-h2-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -194,7 +201,7 @@
                 <p class="getAQuote-h2-text whiteText">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor 
                     ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="getAQuote-content">   
-                    <form class="field-wrapper" onsubmit="sendMessage()" action="#getAQuote"> 
+                    <form class="field-wrapper" onsubmit="sendMessage(event)"> 
                         <input class ="field fieldName" type="text" placeholder="Name (Required)" required > 
                         <input class ="field fieldEmail" type="email" placeholder="Email (Required)" required >
                         <input class ="field fieldSubject" type="text" placeholder="Subject">
