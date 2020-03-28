@@ -12,16 +12,12 @@ html {
     margin: 0 auto;
     background-color: palegoldenrod;
 }
-.bodyWrapper{
+
+.bodyWrapper {
     overflow: hidden;
 }
-.header,
-.ourServices,
-.slide,
-.portfolio,
-.aboutUs,
-.getAQuote,
-.footer {
+
+.header, .ourServices, .slide, .portfolio, .aboutUs, .getAQuote, .footer {
     padding: 0 40px;
 }
 
@@ -35,12 +31,15 @@ html {
     justify-content: space-between;
     border-bottom: 6px solid #323746;
 }
-.headerBurger{
+
+.headerBurger {
     display: none;
 }
-.headerMenu{
+
+.headerMenu {
     display: none;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -83,7 +82,6 @@ html {
     cursor: pointer;
 }
 
-
 /*пофиксить*/
 
 .red-item {
@@ -94,18 +92,13 @@ html {
     color: #f06c64;
 }
 
-
 /*body styles*/
-
 
 /*************************************singolo1*****************************************/
 
-
 /*singolo1.slider*/
 
-
 /*caruselka*/
-
 
 .carousel {
     position: relative;
@@ -128,8 +121,7 @@ html {
     animation: 0.5s ease-in-out;
 }
 
-.item.active,
-.next {
+.item.active, .next {
     display: block;
 }
 
@@ -257,6 +249,7 @@ html {
 .from-right {
     animation-name: right;
 }
+
 @keyframes left {
     from {
         left: 0;
@@ -274,7 +267,6 @@ html {
         left: 0%
     }
 }
-
 
 /*singolo1.ourServices*/
 
@@ -345,17 +337,13 @@ html {
     font-weight: 400;
 }
 
-
 /*************************************singolo2*****************************************/
-
 
 /*singolo2.portfolio*/
 
 .portfolio {
-    /*height: 804px;*/
     padding-top: 59px;
     padding-bottom: 62px;
-
     border-bottom: 6px solid #323746;
     background-color: #2d303a;
 }
@@ -399,7 +387,6 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*height: 606px;*/
     border: none;
     overflow: hidden;
 }
@@ -411,7 +398,6 @@ html {
     margin: 0 0 20px 0;
     cursor: pointer;
 }
-
 
 /*singolo2.aboutUs*/
 
@@ -489,9 +475,7 @@ html {
     outline: 1px solid #767e9e;
 }
 
-
 /*************************************singolo3*****************************************/
-
 
 /*singolo3.GetAQuote*/
 
@@ -616,7 +600,6 @@ button.send {
     min-width: 20px;
 }
 
-
 /*footer*/
 
 .footer {
@@ -650,49 +633,30 @@ button.send {
     color: #c5c5c5;
     border-color: #c5c5c5;
 }
-.headerMenu{
+
+.headerMenu {
     display: none;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
 
 @media (max-width: 1020px) {
-    html{
+    html {
         max-width: 768px;
     }
-    .slide{
-        height:447.25px;
+    .slide {
+        height: 447.25px;
     }
-
-    .phone-horizontal-border{
+    .phone-horizontal-border {
         max-width: 344.26px;
     }
-    .phone-vertical-border{
-        max-width: 162.36px;
-    }
-    .phone-slide2-border{
-        max-width: 77%;
-    }
-
-    .phoneVerticalDisplay {
-        left: 11px;
-        top: 44px;
-        width: 126px;
-    }
-
     .phoneHorizontalDisplay {
         left: 44px;
         top: 11px;
         width: 236px;
-    }
-
-    .buttonHomeVertical {
-        bottom: 24px;
-        left: 59px;
-        width: 31.48px;
     }
     .buttonHomeHorizontal {
         bottom: 81px;
@@ -700,175 +664,73 @@ button.send {
         width: 31.48px;
     }
 
+    .phone-vertical-border {
+        max-width: 162.36px;
+    }
+    .phoneVerticalDisplay {
+        left: 11px;
+        top: 44px;
+        width: 126px;
+    }
+    .buttonHomeVertical {
+        bottom: 24px;
+        left: 59px;
+        width: 31.48px;
+    }
+    .phone-slide2-border {
+        max-width: 77%;
+    }
     .phoneSlide2Display {
         left: 171px;
         top: 53px;
         width: 155px;
     }
-
     .buttonHomeSlide2 {
         bottom: 32px;
         width: 31.48px;
         left: 233px;
     }
-
-    .field{
-        margin-bottom: 12px;
-    }
+    
     .ourServices-h2-text {
         height: auto;
     }
-    .gallery{
-        max-width: 768px;
-        align-content: space-around;
-    }
-    .person-text{
+
+    .person-text {
         height: 66px;
     }
-
-
-
+    .field {
+        margin-bottom: 12px;
+    }
 }
 
 @media(max-width:767px) {
-    .service{
-        max-width: 100%;
-    }
-    .gallery-img:nth-child(n+9) {
-        display: none;
-    }
-    html{
-       max-width: 375px;
-    }
-    
-    .header,
-.ourServices,
-.slide,
-.portfolio,
-.aboutUs,
-.getAQuote,
-.footer {
-    padding-left:30px;
-    padding-right: 30px;
-}
 
-    .phone-horizontal-border{
-        max-width: 168.1px;
+    html {
+        max-width: 375px;
     }
-    .phone-vertical-border{
-        max-width: 79.28px;
-    }
-    .phone-slide2-border{
-        max-width: 178px;
-    }
-    .control{
-        width: 24px;
+    .header, .ourServices, .slide, .portfolio, .aboutUs, .getAQuote, .footer {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    .phoneVerticalDisplay {
-        left: 5px;
-    top: 22px;
-    width: 62px;
-    }
-
-    .phoneHorizontalDisplay {
-        left: 21px;
-    top: 5px;
-    width: 116px;
-    }
-
-    .buttonHomeVertical {
-        bottom: 13px;
-    left: 28px;
-        width: 15.37px;
-    }
-    .buttonHomeHorizontal {
-        bottom: 41px;
-    left: 3px;
-        width: 15.37px;
-    }
-
-    .phoneSlide2Display {
-        left: 50px;
-        top: 24px;
-        width: 69px;
-    }
-
-    .buttonHomeSlide2 {
-        bottom: 15px;
-        width: 15.37px;
-        left: 76.5px;
-    }
-
-    .field{
-        margin-bottom: 12px;
-    }
-    .ourServices-h2-text {
-        height: auto;
-    }
-    .slide {
-        padding: 20px 0;
-        height: 218px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .gallery{
-        overflow: hidden;
-    }
-    .gallery-img {
-        width: 151px;
-        height: 128px;
-
-    }
-
-    .portfolio-h2-text {
-        margin-bottom: 15px;
-        white-space:normal;
-    }
-
-    .profiles {
-        flex-direction: column;
-    }
-    .person {
-        width: 100%;
-        margin-bottom: 34px;
-    }
-    .footer{
-        justify-content: space-around;
-    }
-    .copyright{
-        display: none;
-    }
-    button.send{
-        align-self: start;
-        width: 100%;
-        height: 34px;
-    }
-    .getAQuote-content {
-        flex-direction: column;
-    }
-
-    .header{
+    .header {
         height: 71px;
-        border:none;
+        border: none;
     }
-
-    .headerBurger{
+    .headerBurger {
         cursor: pointer;
-        display:flex;
+        display: flex;
         z-index: 3;
         transition: all ease 0.6s;
     }
-    .logo{
+    .logo {
         position: absolute;
-        top:25%;
-        left:40%;
+        top: 25%;
+        left: 40%;
         z-index: 3;
     }
-
-    .navigation-link{
+    .navigation-link {
         margin-left: 30px;
-        
         font-weight: bold;
         text-decoration: none;
         font-size: 22px;
@@ -877,39 +739,133 @@ button.send {
         align-self: center;
         text-transform: uppercase;
         color: white;
-        
     }
-
-    
-    .headerMenu{
+    .headerMenu {
         position: absolute;
         display: flex;
-        left:-100%;
+        left: -100%;
         transition: all ease 0.6s;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-    width: 278px;
-    height: 100vh;
-    background-color: #2D303A;
+        width: 278px;
+        height: 100vh;
+        background-color: #2D303A;
     }
-    .activeMenu{
+    .activeMenu {
         display: flex;
-        left:0%;
+        left: 0%;
         color: #f06c64;
-
     }
     .burgerOpened {
         display: block;
         transform: rotate(90deg);
         transition: all ease 0.6s;
     }
-
-    .header-navigation{
+    .header-navigation {
         display: none;
     }
-    .field-wrapper{
-        max-width: 100%;
+    
+    .slide {
+        height: 218px;
+    }
+    .phone-horizontal-border {
+        max-width: 168.1px;
+    }
+    .phoneHorizontalDisplay {
+        left: 21px;
+        top: 5px;
+        width: 116px;
+    }
+    .buttonHomeHorizontal {
+        bottom: 41px;
+        left: 3px;
+        width: 15.37px;
     }
 
+    .phone-vertical-border {
+        max-width: 79.28px;
+    }
+    .phoneVerticalDisplay {
+        left: 5px;
+        top: 22px;
+        width: 62px;
+    }
+    .buttonHomeVertical {
+        bottom: 13px;
+        left: 28px;
+        width: 15.37px;
+    }
+
+    .phone-slide2-border {
+        max-width: 178px;
+    }
+    .phoneSlide2Display {
+        left: 50px;
+        top: 24px;
+        width: 69px;
+    }
+    .buttonHomeSlide2 {
+        bottom: 15px;
+        width: 15.37px;
+        left: 76.5px;
+    }
+    .control {
+        width: 24px;
+    }
+
+    .ourServices-h2-text {
+        height: auto;
+    }
+    .service {
+        max-width: 100%;
+    }
+    
+
+    .gallery-img:nth-child(n+9) {
+        display: none;
+    }
+
+    .gallery-img {
+        width: 151px;
+        height: 128px;
+    }
+    .portfolio-h2-text {
+        white-space: normal;
+    }
+    .profiles {
+        flex-direction: column;
+    }
+    .person {
+        width: 100%;
+        margin-bottom: 34px;
+    }
+    .person-photo {
+        width: 100%;
+    }    
+
+    .field {
+        margin-bottom: 12px;
+    }
+
+    button.send {
+        align-self: start;
+        width: 100%;
+        height: 34px;
+    }
+    .getAQuote-content {
+        flex-direction: column;
+    }
+
+    .footer {
+        justify-content: space-around;
+    }
+    .copyright {
+        display: none;
+    }
+
+   
+    .field-wrapper {
+        max-width: 100%;
+    }
 }
