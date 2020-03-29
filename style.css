@@ -745,7 +745,7 @@ button.send {
         position: absolute;
         display: flex;
         opacity:0;
-        transform: translateX(0%);
+        transform: translateY(-100%);
         transition: all ease 0.6s;
         align-items: center;
         flex-direction: column;
@@ -755,7 +755,7 @@ button.send {
         background-color: #2D303A;
     }
     .activeMenu {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
     .burgerOpened {

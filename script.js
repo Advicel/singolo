@@ -178,12 +178,10 @@ document.querySelector(".headerBurger").addEventListener("click",function(){
     document.querySelector("body").classList.toggle("bodyScrollOff");
     if(document.querySelector(".headerBurger img").classList.contains("burgerOpened")){
         document.querySelector(".headerBurger img").classList.remove("burgerOpened");
-        console.log("qwe");
         document.querySelector(".headerBurger img").classList.add("burgerClosed");
     } else {
         document.querySelector(".headerBurger img").classList.remove("burgerClosed");
-
-    document.querySelector(".headerBurger img").classList.add("burgerOpened");
+        document.querySelector(".headerBurger img").classList.add("burgerOpened");
     }
 })
 
