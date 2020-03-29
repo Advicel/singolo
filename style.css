@@ -13,9 +13,6 @@ html {
     background-color: palegoldenrod;
 }
 
-.bodyWrapper {
-    overflow: hidden;
-}
 
 .header, .ourServices, .slide, .portfolio, .aboutUs, .getAQuote, .footer {
     padding: 0 40px;
@@ -643,7 +640,7 @@ button.send {
     height: 100%;
 }
 
-@media (max-width: 1020px) {
+@media (max-device-width: 1019px) {
     html {
         max-width: 768px;
     }
@@ -703,11 +700,15 @@ button.send {
     }
 }
 
-@media(max-width:767px) {
+@media(max-device-width:767px) {
 
     html {
         max-width: 375px;
     }
+    
+.bodyScrollOff {
+    overflow: hidden;
+}
     .header, .ourServices, .slide, .portfolio, .aboutUs, .getAQuote, .footer {
         padding-left: 30px;
         padding-right: 30px;
@@ -743,7 +744,8 @@ button.send {
     .headerMenu {
         position: absolute;
         display: flex;
-        left: -100%;
+        opacity:0;
+        transform: translateX(0%);
         transition: all ease 0.6s;
         align-items: center;
         flex-direction: column;
@@ -753,15 +755,18 @@ button.send {
         background-color: #2D303A;
     }
     .activeMenu {
-        display: flex;
-        left: 0%;
-        color: #f06c64;
+        transform: translateX(0);
+        opacity: 1;
     }
     .burgerOpened {
-        display: block;
         transform: rotate(90deg);
         transition: all ease 0.6s;
     }
+    .burgerClosed{
+        transform: rotate(0deg);
+        transition: all ease 0.6s;
+    }
+
     .header-navigation {
         display: none;
     }

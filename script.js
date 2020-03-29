@@ -109,6 +109,9 @@ function scrollToAnchor(element) {
 function scrollToAnchor375(element) {
     const headerHeight = 71;
     document.querySelector(".headerMenu").classList.remove("activeMenu");
+    document.querySelector(".headerBurger img").classList.remove("burgerOpened");
+    document.querySelector(".headerBurger img").classList.add("burgerClosed");
+    document.querySelector("body").classList.remove("bodyScrollOff");
     const scrolledY = document.querySelector(element).offsetTop;
 
     window.scrollTo({
@@ -172,7 +175,16 @@ document.querySelector(".control.right").addEventListener("click", function() {
 /*burger*/
 document.querySelector(".headerBurger").addEventListener("click",function(){
     document.querySelector(".headerMenu").classList.toggle("activeMenu");
-    document.querySelector(".headerBurger img").classList.toggle("burgerOpened");
+    document.querySelector("body").classList.toggle("bodyScrollOff");
+    if(document.querySelector(".headerBurger img").classList.contains("burgerOpened")){
+        document.querySelector(".headerBurger img").classList.remove("burgerOpened");
+        console.log("qwe");
+        document.querySelector(".headerBurger img").classList.add("burgerClosed");
+    } else {
+        document.querySelector(".headerBurger img").classList.remove("burgerClosed");
+
+    document.querySelector(".headerBurger img").classList.add("burgerOpened");
+    }
 })
 
 
