@@ -213,7 +213,7 @@ html {
 .arrow {
     display: inline-block;
     position: absolute;
-    top: 40%;
+    top: 45%;
     /*
     top:232px;
     left:0;
@@ -727,7 +727,7 @@ button.send {
     .logo {
         position: absolute;
         top: 25%;
-        left: 40%;
+        left: 36%;
         z-index: 3;
     }
     .navigation-link {
@@ -860,6 +860,10 @@ button.send {
     }
     .getAQuote-content {
         flex-direction: column;
+    }
+
+    .contactInfo {
+        width: 100%;
     }
 
     .footer {
