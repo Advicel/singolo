@@ -640,7 +640,7 @@ button.send {
     height: 100%;
 }
 
-@media (max-device-width: 1019px) {
+@media (max-width: 1019px) {
     html {
         max-width: 768px;
     }
@@ -700,7 +700,7 @@ button.send {
     }
 }
 
-@media(max-device-width:767px) {
+@media(max-width:767px) {
 
     html {
         max-width: 375px;
